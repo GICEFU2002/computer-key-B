@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Keyboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .keyboard {
+      display: grid;
+      grid-template-rows: repeat(5, 60px);
+      grid-template-columns: repeat(14, 60px);
+      gap: 10px;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .key {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #444;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .key:active {
+      background-color: #555;
+      box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Adjust sizes for special keys */
+    .key.space {
+      grid-column: span 6;
+    }
+
+    .key.shift {
+      grid-column: span 2;
+    }
+
+    .key.enter {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .key.backspace {
+      grid-column: span 2;
+    }
+
+    .key.tab {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="keyboard">
+    <!-- Row 1 -->
+    <div class="key">Esc</div>
+    <div class="key">F1</div>
+    <div class="key">F2</div>
+    <div class="key">F3</div>
+    <div class="key">F4</div>
+    <div class="key">F5</div>
+    <div class="key">F6</div>
+    <div class="key">F7</div>
+    <div class="key">F8</div>
+    <div class="key">F9</div>
+    <div class="key">F10</div>
+    <div class="key">F11</div>
+    <div class="key">F12</div>
+    <div class="key">Del</div>
+
+    <!-- Row 2 -->
+    <div class="key">~</div>
+    <div class="key">1</div>
+    <div class="key">2</div>
+    <div class="key">3</div>
+    <div class="key">4</div>
+    <div class="key">5</div>
+    <div class="key">6</div>
+    <div class="key">7</div>
+    <div class="key">8</div>
+    <div class="key">9</div>
+    <div class="key">0</div>
+    <div class="key">-</div>
+    <div class="key">=</div>
+    <div class="key backspace">Backspace</div>
+
+    <!-- Row 3 -->
+    <div class="key tab">Tab</div>
+    <div class="key">Q</div>
+    <div class="key">W</div>
+    <div class="key">E</div>
+    <div class="key">R</div>
+    <div class="key">T</div>
+    <div class="key">Y</div>
+    <div class="key">U</div>
+    <div class="key">I</div>
+    <div class="key">O</div>
+    <div class="key">P</div>
+    <div class="key">[</div>
+    <div class="key">]</div>
+    <div class="key">\</div>
+
+    <!-- Row 4 -->
+    <div class="key shift">Shift</div>
+    <div class="key">A</div>
+    <div class="key">S</div>
+    <div class="key">D</div>
+    <div class="key">F</div>
+    <div class="key">G</div>
+    <div class="key">H</div>
+    <div class="key">J</div>
+    <div class="key">K</div>
+    <div class="key">L</div>
+    <div class="key">;</div>
+    <div class="key">'</div>
+    <div class="key enter">Enter</div>
+
+    <!-- Row 5 -->
+    <div class="key shift">Shift</div>
+    <div class="key">Z</div>
+    <div class="key">X</div>
+    <div class="key">C</div>
+    <div class="key">V</div>
+    <div class="key">B</div>
+    <div class="key">N</div>
+    <div class="key">M</div>
+    <div class="key">,</div>
+    <div class="key">.</div>
+    <div class="key">/</div>
+    <div class="key space">Space</div>
+  </div>
+</body>
+</html>
